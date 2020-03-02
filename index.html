@@ -20,33 +20,49 @@
     <title>Cantinez</title>
 </head>
 
-<body class="bg-dark">
-    <div class="container bg-dark text-light border-light">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <span class="navbar-brand">Cantinez</span>
+<body>
+    <div class="container text-light">
+        <nav class="navbar navbar-expand-lg mt-2 pt-0" id="nav">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse">
+            <div class="collapse navbar-collapse float-left">
                 <div class="navbar-nav">
                     <btn class="nav-item nav-link active" id="english">English<span class="sr-only">(current)</span>
                     </btn>
                     <btn class="nav-item nav-link" id="spanish">Español</a>
                 </div>
             </div>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav float-right">
+            <img src="assets/images/Cantinez_Logo1_Black-01.png" alt="Cantinez Logo1" class="img-fluid w-25">
+            <div class="collapse navbar-collapse float-right" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
                     <a class="nav-item nav-link active" href="#about">About<span class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="#services">Services</a>
                     <a class="nav-item nav-link" href="#contact">Contact</a>
                 </div>
             </div>
         </nav>
-        <div class="bg-dark" id="about">
+        <div class="mt-4 p-3" id="about">
             <h1>About</h1>
+            <div>
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, atque quas autem quibusdam alias
+                    expedita illum! A libero incidunt eveniet pariatur repellendus natus consequuntur earum. Ducimus
+                    veritatis architecto a aliquid?
+                    <br><br>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci repellendus quae aliquid amet
+                    illo cum numquam. Consequatur nihil, inventore provident temporibus officiis nemo eveniet,
+                    accusantium beatae doloremque laboriosam reprehenderit facilis doloribus perspiciatis debitis
+                    mollitia aspernatur quidem architecto! Eius minus dicta asperiores distinctio officia dolore
+                    consequatur, placeat praesentium omnis obcaecati, doloremque cumque modi illo? Ducimus, vitae! In,
+                    quidem amet. Totam fuga molestiae reiciendis corrupti iste earum repellendus nisi autem voluptate
+                    expedita numquam facilis est, quam nihil ad. Sit neque blanditiis consequuntur saepe odit modi ullam
+                    numquam cupiditate, eaque cum quae laudantium perspiciatis magni eligendi aperiam doloribus
+                    accusantium. Possimus quae magnam molestias?
+                </div>
+            </div>
         </div>
-        <div class="bg-dark" id="Services">
+        <div class="mt-3 p-3" id="services">
             <h1>Services</h1>
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -82,18 +98,35 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+            <ul class="mt-2">
+                <li class="">Cras justo odio</li>
+                <li class="">Dapibus ac facilisis in</li>
+                <li class="">Morbi leo risus</li>
+                <li class="">Porta ac consectetur ac</li>
+                <li class="">Vestibulum at eros</li>
+            </ul>
         </div>
-        <div class="bg-dark" id="Contact">
+        <div class="mt-3 p-3" id="contact">
             <h1>Contact</h1>
             <form>
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                    <label for="nameInput">Name</label>
+                    <input type="name" class="form-control bg-dark text-light" id="nameInput"
+                        placeholder="Bill Murray">
+                </div>
+                <div class="form-group">
+                    <label for="emailInput">Email Address</label>
+                    <input type="email" class="form-control bg-dark text-light" id="emailInput"
                         placeholder="name@example.com">
                 </div>
                 <div class="form-group">
+                    <label for="numberInput">Phone Number</label>
+                    <input type="number" class="form-control bg-dark text-light" id="numberInput"
+                        placeholder="000-000-0000">
+                </div>
+                <div class="form-group">
                     <label for="exampleFormControlSelect1">Example select</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                    <select class="form-control bg-dark text-light" id="exampleFormControlSelect1">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -103,7 +136,7 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlSelect2">Example multiple select</label>
-                    <select multiple class="form-control" id="exampleFormControlSelect2">
+                    <select multiple class="form-control bg-dark text-light" id="exampleFormControlSelect2">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -112,11 +145,20 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="commentInput">Comment</label>
+                    <textarea class="form-control bg-dark text-light" id="commentInput" rows="3"></textarea>
                 </div>
             </form>
         </div>
+        <footer class="pb-4 mt-5 p-3">
+            <div class="row">
+                <div class="col-sm"></div>
+                <div class="col-sm">
+                    <img src="assets/images/Cantinez_Logo2_White.png" alt="Alt Logo" class="img-fluid col-sm">
+                </div>
+                <div class="col-sm"></div>
+            </div>
+        </footer>
     </div>
 </body>
 
